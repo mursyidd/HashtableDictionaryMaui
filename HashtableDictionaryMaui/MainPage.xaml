@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HashtableDictionaryMaui.MainPage">
+    <ContentPage.Content>
+        <Grid
+            ColumnDefinitions="*, *">
+            <Grid
+                Grid.Column="0"
+                RowDefinitions="*, *">
+                <Editor
+                    x:Name="editorHash"
+                    Grid.Row="0"
+                    IsReadOnly="True"
+                    Placeholder="Hashtable here"/>
+                <HorizontalStackLayout
+                    Grid.Row="1"
+                    HorizontalOptions="Center">
+                    <Entry
+                        x:Name="entHash1"
+                        ClearButtonVisibility="WhileEditing"
+                        WidthRequest="200"
+                        Placeholder="Input 1"
+                        VerticalOptions="End"
+                        Margin="10"/>
+                    <Entry
+                        x:Name="entHash2"
+                        ClearButtonVisibility="WhileEditing"
+                        WidthRequest="200"
+                        Placeholder="Input 2"
+                        VerticalOptions="End"
+                        Margin="10"/>
+                    <Button
+                        Text="Send"
+                        VerticalOptions="End"
+                        Clicked="Hashbtn_Clicked"
+                        Margin="5"
+                        WidthRequest="100"/>
+                </HorizontalStackLayout>
+            </Grid>
+            <Grid
+                Grid.Column="1"
+                RowDefinitions="*, *">
+                <Editor
+                    x:Name="editorDict"
+                    Grid.Row="0"
+                    IsReadOnly="True"
+                    Placeholder="Hashtable here"/>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    Grid.Row="1">
+                    <Entry
+                        x:Name="entDict1"
+                        ClearButtonVisibility="WhileEditing"
+                        WidthRequest="200"
+                        Placeholder="Input 1"
+                        VerticalOptions="End"
+                        Margin="10"/>
+                    <Entry
+                        x:Name="entDict2"
+                        ClearButtonVisibility="WhileEditing"
+                        WidthRequest="200"
+                        Placeholder="Input 2"
+                        VerticalOptions="End"
+                        Margin="10"/>
+                    <Button
+                        Text="Send"
+                        VerticalOptions="End"
+                        Clicked="Dictbtn_Clicked"
+                        Margin="5"
+                        WidthRequest="100"/>
+                </HorizontalStackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
