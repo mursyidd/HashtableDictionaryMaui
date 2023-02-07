@@ -6,14 +6,12 @@
         <Grid
             ColumnDefinitions="*, *">
             <Grid
-                Grid.Column="0"
-                RowDefinitions="*, *">
+                Grid.Column="0">
                 <Editor
                     x:Name="editorHash"
-                    Grid.Row="0"
                     IsReadOnly="True"
                     Placeholder="Hashtable here"/>
-                <HorizontalStackLayout
+                <!--<HorizontalStackLayout
                     Grid.Row="1"
                     HorizontalOptions="Center">
                     <Entry
@@ -36,17 +34,15 @@
                         Clicked="Hashbtn_Clicked"
                         Margin="5"
                         WidthRequest="100"/>
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
             </Grid>
             <Grid
-                Grid.Column="1"
-                RowDefinitions="*, *">
+                Grid.Column="1">
                 <Editor
                     x:Name="editorDict"
-                    Grid.Row="0"
                     IsReadOnly="True"
                     Placeholder="Hashtable here"/>
-                <HorizontalStackLayout
+                <!--<HorizontalStackLayout
                     HorizontalOptions="Center"
                     Grid.Row="1">
                     <Entry
@@ -69,7 +65,7 @@
                         Clicked="Dictbtn_Clicked"
                         Margin="5"
                         WidthRequest="100"/>
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
             </Grid>
         </Grid>
     </ContentPage.Content>
